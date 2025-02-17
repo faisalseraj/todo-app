@@ -1,46 +1,118 @@
-# Getting Started with Create React App
+## 🎯 **Project Overview**  
+This **To-Do List** app allows users to:
+- ✅ **Fetch** tasks from the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/todos)  
+- ✅ **Add new tasks** with an input field  
+- ✅ **Mark tasks as completed**  
+- ✅ **Delete tasks**  
+- ✅ **Filter tasks**: `All`, `Completed`, `Pending`  
+- ✅ **Persist user tasks** in **Local Storage**  
+- ✅ **Use modern UI elements & animations**  
+- ✅ **Enhance UX with `react-icons` for a better design**  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## 🛠 **Tech Stack**
+- **React.js** (Functional Components + Hooks)  
+- **TypeScript** (Strong Type Safety)  
+- **Axios** (Fetching data from API)  
+- **Local Storage** (Persisting user tasks)  
+- **CSS** (Custom styling & animations)  
+- **React Icons** (For enhanced UI)  
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 **Installation & Setup**
+1️⃣ Clone the Repo  
+```bash
+git clone https://github.com/your-repo/todo-app.git
+cd todo-app
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2️⃣ Install Dependencies  
+```bash
+npm install
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+3️⃣ Run the Application  
+```bash
+npm start
+```
+The app will launch at `http://localhost:3000`
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📌 **Folder Structure**
+```
+todo-app/
+│── public/
+│── src/
+│   ├── components/
+│   │   ├── TaskItem.tsx
+│   │   ├── TaskList.tsx
+│   │   ├── TaskForm.tsx
+│   ├── pages/
+│   │   ├── TodoPage.tsx
+│   ├── utils/
+│   │   ├── localStorage.ts
+│   ├── types.ts
+│   ├── App.tsx
+│   ├── index.tsx
+│   ├── styles.css
+│── package.json
+│── tsconfig.json
+│── .gitignore
+│── README.md
+```
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 💡 **Features Implemented**
+### 📨 **Fetching Data from API**
+We fetch initial tasks from the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/todos?_limit=5).  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 📝 **Adding Tasks**
+Users can enter a task and click the **`Add (+)`** button to store it in local state & local storage.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### ✅ **Mark Task as Completed**
+Users can **mark tasks complete** using the ✅ **check icon**, which visually updates in the UI.
 
-### `npm run eject`
+### ❌ **Deleting Tasks**
+Users can **permanently delete** tasks using the **trash bin icon 🗑**.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 🔎 **Filtering Tasks**
+Switch between `ALL | COMPLETED | PENDING` using **filter buttons** (`FaList`, `FaCheckCircle`, `FaTimesCircle`).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 💾 **Local Storage Persistence**
+Tasks **persist across page refreshes**, thanks to **localStorage**.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 🎨 **Theme & UI Enhancements**
+✔ **Rounded Buttons, Hover Effects & Transitions**  
+✔ **Icons for Actions (Using `react-icons`)**  
+✔ **Task Items have a Unique Look (Completed vs Uncompleted)**  
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## 📌 **Key Libraries Used**
+| Dependency  | Purpose |
+|------------|---------|
+| **React.js** | UI framework |
+| **TypeScript** | Strong typing |
+| **Axios** | For fetching tasks |
+| **React Icons** | Adding icons |
+| **LocalStorage** | Data persistence |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 💻 **How to Contribute**
+1️⃣ Fork the repository  
+2️⃣ Create a new branch (`git checkout -b feature-name`)  
+3️⃣ Make your changes  
+4️⃣ Commit your changes (`git commit -m 'Added new feature'`)  
+5️⃣ Push to GitHub (`git push origin feature-name`)  
+6️⃣ Open a Pull Request 🚀  
+
+---
+
+## 🏆 **Credits**
+Built by **Faisal Seraj** 
+**Contact me:** ✉ [faisalseraj47@gmail.com](mailto:faisalseraj47@gmail.com)  
