@@ -1,0 +1,121 @@
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #eceff1;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.task-item.completed {
+  background: #c8e6c9;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.check-btn, .delete-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.check-btn {
+  color: #4caf50;
+}
+
+.delete-btn {
+  color: #f44336;
+}
+
+.task-form input {
+  padding: 10px;
+  width: 70%;
+  margin-right: 5px;
+}
+
+.task-form button {
+  background: #0288d1;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.filters button {
+  background: #e0e0e0;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.filters button:hover {
+  background: #bdbdbd;
+}
+
+.filters button.active {
+  background: #007bff;
+  color: #fff;
+}
+
+.filters button svg {
+  font-size: 16px;
+}
+
+.task-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.task-form input {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.task-form button {
+  background: #0288d1;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.task-form button:disabled {
+  background: #bdbdbd;
+  cursor: not-allowed;
+}
+
+.task-form button:hover:not(:disabled) {
+  background: #0277bd;
+}
